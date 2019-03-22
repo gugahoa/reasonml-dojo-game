@@ -1,0 +1,31 @@
+# tsdl
+
+doc: [
+  "_build/CHANGES.md" {"CHANGES.md"}
+  "_build/CHANGES.md" {"CHANGES.md"}
+  "_build/LICENSE.md" {"LICENSE.md"}
+  "_build/README.md" {"README.md"}
+  "_build/README.md" {"README.md"}
+  "_build/test/min.ml" {"min.ml"}
+  "_build/test/minc.c" {"minc.c"} ]
+lib: [
+  "_build/opam" {"opam"}
+  "_build/pkg/META" {"META"}
+  "_build/src/libtsdl.a" {"libtsdl.a"}
+  "_build/src/tsdl.a" {"tsdl.a"}
+  "_build/src/tsdl.cma" {"tsdl.cma"}
+  "_build/src/tsdl.cmi" {"tsdl.cmi"}
+  "?_build/src/tsdl.cmti" {"tsdl.cmti"}
+  "_build/src/tsdl.cmx" {"tsdl.cmx"}
+  "_build/src/tsdl.cmxa" {"tsdl.cmxa"}
+  "_build/src/tsdl.cmxs" {"tsdl.cmxs"}
+  "_build/src/tsdl.mli" {"tsdl.mli"}
+  "_build/src/tsdl_consts.cmx" {"tsdl_consts.cmx"}
+  "_build/src/tsdl_top.a" {"tsdl_top.a"}
+  "_build/src/tsdl_top.cma" {"tsdl_top.cma"}
+  "_build/src/tsdl_top.cmx" {"tsdl_top.cmx"}
+  "_build/src/tsdl_top.cmxa" {"tsdl_top.cmxa"}
+  "_build/src/tsdl_top.cmxs" {"tsdl_top.cmxs"}
+  "_build/src/tsdl_top_init.ml" {"tsdl_top_init.ml"} ]
+stublibs: [
+  "_build/src/dlltsdl.so" {"dlltsdl.so"} ]
