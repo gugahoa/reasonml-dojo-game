@@ -1,13 +1,29 @@
 open Reprocessing;
 
+type state = {
+  grid: Grid.t,
+}
+
 let setup = (env) => {
-  Env.size(~width=200, ~height=200, env);
+  Env.size(~width=500, ~height=500, env);
+  
+  {
+    grid: Grid.make(10, 10),
+  }
 };
 
-let draw = (_state, env) => {
+let draw = (state, env) => {
   Draw.background(Constants.black, env);
-  Draw.fill(Constants.blue, env);
-  Draw.rect(~pos=(50, 50), ~width=100, ~height=100, env)
+  Grid.draw(state.grid, env);
+
+  state
 };
 
-run(~setup, ~draw, ());
+let mouseDown = (state, env) => {
+  let grid = Grid.click(state.grid, env);
+  {
+    grid: grid
+  }
+}
+
+run(~setup, ~draw, ~mouseDown, ());
